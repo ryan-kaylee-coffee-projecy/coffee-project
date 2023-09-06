@@ -8,7 +8,6 @@ body {
 .container {
     position: relative;
 }
-
 .browse {
     font-family: Julius Sans One;
     font-size: 40px;
@@ -49,15 +48,12 @@ ul li a:hover {
     height: 30px;
     background-color: #ECECEC;
 }
-
 .form-box {
     padding-top: 5px;
     display: flex;
-    padding-top: 30px;
     color: #ECECEC;
     z-index: 1;
 }
-
 .side-nav {
     display: flex;
     justify-content: end;
@@ -94,4 +90,23 @@ coffee-name {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 100px;
+}
+.drop-down-form {
+    padding-left: 4px;
+}
+#roast-selection {
+    font-family: arial;
+    font-size: 15px;
+    border-style: none;
+    height: 32px;
+    ;
+}
+#submit {
+    font-family: arial;
+    font-size: 15px;
+    background-color: grey;
+    border-style: none;
+    padding: 5px;
+    height: 30px;
+
 }
