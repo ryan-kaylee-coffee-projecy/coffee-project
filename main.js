@@ -12,9 +12,9 @@
 
 // this function prints the coffee froms the coffees's object'
 function renderCoffee(coffee) {
-    var html = '<div>';
-    html += '<h1>' + coffee.name + '</h1>';
-    html += '<p>' + coffee.roast + '</p>';
+    var html = '<div style="background-color: white; border: 3px solid grey; width: 200px; margin: 5px;">';
+    html += '<div style="font-family: Italiana; font-size: 30px;">' + coffee.name + '</div>';
+    html += '<p style="font-style: italic;">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
@@ -59,9 +59,9 @@ searchInput.addEventListener("input", (event) =>{
     }
     for (let i=0;i<coffeeSearchBucket.length;i++){
         searchCoffees +=
-            `<div class="coffees">
-                <div>Coffee Name: ${coffeeSearchBucket[i].name}</div>
-                <div>Coffee Roast ${coffeeSearchBucket[i].roast}</div>
+            `<div style="justify-content: center; background-color: white; width: 200px; border: 3px solid grey; margin: 5px;">
+                <div class="coffee-name" style="font-family: Italiana; font-size: 30px;"> ${coffeeSearchBucket[i].name}</div>
+                <div class="coffee-roast" style="font-style: italic;"> ${coffeeSearchBucket[i].roast}</div>
             </div>`
     }
     container.innerHTML = searchCoffees;

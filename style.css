@@ -27,13 +27,25 @@ nav {
 }
 ul {
     list-style-type: none;
+    padding: 0px;
 }
 ul li {
     padding: 10px 10px;
+    font-family: Julius Sans One;
+    font-size: 20px;
+    font-weight: bolder;
+}
+ul li a {
+    color: #ECECEC;
+    text-decoration: none;
+}
+ul li a:hover {
+    color: grey;
+    transition: 0.3s;
 }
 
 #search-bar {
-    width: 500px;
+    width: 400px;
     height: 30px;
     background-color: #ECECEC;
 }
@@ -43,6 +55,7 @@ ul li {
     display: flex;
     padding-top: 30px;
     color: #ECECEC;
+    z-index: 1;
 }
 
 .side-nav {
@@ -51,7 +64,7 @@ ul li {
     padding-left: 1050px;
     min-height: 100vh;
     position: absolute;
-    z-index: 9;
+    z-index: 0;
 }
 .side-nav .nav-header {
     font-family: Italiana;
@@ -59,6 +72,26 @@ ul li {
 }
 .coffee-search-box {
     width: 1000px;
-    height: 800px;
+    height: 600px;
     background-color: #CCCCCC;
+
+}
+.coffee-box {
+    background-color: white;
+     /*width: 100px;*/
+    border: 3px solid grey;
+    justify-content: center;
+}
+p {
+    font-style: italic;
+}
+coffee-name {
+    font-family: Julius Sans One;
+    font-size: 40px;
+}
+.coffees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
 }
