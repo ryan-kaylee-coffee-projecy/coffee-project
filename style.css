@@ -1,10 +1,64 @@
-/*base styling*/
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+@import 'layout.css';
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+body {
+    background-color: #D9D9D9;
+}
+.container {
+    position: relative;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.browse {
+    font-family: Julius Sans One;
+    font-size: 40px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #725959;
+    width: 200px;
+    z-index: 9;
+    color: #ECECEC;
+    padding-left: 10px;
+
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    padding: 10px 10px;
+}
+
+#search-bar {
+    width: 500px;
+    height: 30px;
+    background-color: #ECECEC;
+}
+
+.form-box {
+    padding-top: 5px;
+    display: flex;
+    padding-top: 30px;
+    color: #ECECEC;
+}
+
+.side-nav {
+    display: flex;
+    justify-content: end;
+    padding-left: 1050px;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 9;
+}
+.side-nav .nav-header {
+    font-family: Italiana;
+    font-size: 40px;
+}
+.coffee-search-box {
+    width: 1000px;
+    height: 800px;
+    background-color: #CCCCCC;
 }
